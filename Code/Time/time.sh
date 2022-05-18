@@ -1,0 +1,8 @@
+data_path="../../Data"
+ast_generation_path="$data_path/ast_generation_time/ast_generation_time_per_version_for_suites_all_tests.csv"
+similarity_path="$data_path/similarity_measurements"
+minimization_results_path="$data_path/minimization_results"
+time_results_path="$data_path/execution_time_results"
+time_results_file_per_version="execution_time_results_per_version.csv"
+sim_time_results_file_per_test_case_pair="execution_time_results_per_test_case_pair.csv"
+python3 src/execution_time.py $ast_generation_path $similarity_path $minimization_results_path $time_results_path $time_results_file_per_version $sim_time_results_file_per_test_case_pair
